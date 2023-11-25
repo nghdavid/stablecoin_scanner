@@ -1,0 +1,1 @@
+from .stablecoin import Stablecoin  # noqa
