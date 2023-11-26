@@ -45,6 +45,7 @@ class EthWallet(Erc20Wallet):
       "0x2c8FBB630289363Ac80705A1a61273f76fD5a161": "Okx4",
       "0x42436286A9c8d63AAfC2eEbBCA193064d68068f2": "Okx11",
       "0x5041ed759Dd4aFc3a72b8192C143F72f4724081A": "Okx7",
+      "0xae0cbaba071d58efc278a815b2cb652286e192ff": "Okx1",
       "0xf89d7b9c864f589bbF53a82105107622B35EaA40": "Bybit1",
       "0xee5B5B923fFcE93A870B3104b7CA09c3db80047A": "Bybit2",
       "0xA7A93fd0a276fc1C0197a5B5623eD117786eeD06": "Bybit3"
@@ -78,10 +79,12 @@ class TronWallet(Erc20Wallet):
       "TWGZbjofbTLY3UCjCV4yiLkRg89zLqwRgi": "Okx5",
       "TJbHp48Shg4tTD5x6fKkU7PodggL5mjcJP": "Okx6",
       "TCz47XgC9TjCeF4UzfB6qZbM9LTF9s1tG7": "Okx4",
+      "TUAVzJ916T7z6oqpdCCaTv6ipC2mmBMJev": "Okx8",
       "TB1WQmj63bHV9Qmuhp39WABzutphMAetSc": "Bybit1",
       "TTH75Z9rfRgzCLNDDYBaR2WjUvuSDRtSMg": "Bybit2",
       "TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa": "Bybit3",
-      "TXRRpT4BZ3dB5ShUQew2HXv1iK3Gg4MM9j": "Bybit4"
+      "TXRRpT4BZ3dB5ShUQew2HXv1iK3Gg4MM9j": "Bybit4",
+      "TBpr1tQ5kvoKMv85XsCESVavYo4oZZdWpY": "Bybit5"
     }
     price = {"usdt": 1.0, "usdc": 1.0}
     ratio = 0.000001
