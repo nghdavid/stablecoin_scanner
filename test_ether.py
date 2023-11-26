@@ -29,7 +29,7 @@ for address in list(TronWallet.wallet.keys()):
     for contract_address in list(TronWallet.contract_address.keys()):
         url = f"https://{TronWallet.scan_domain}/api/account/tokens?&address={address}"
         response = requests.request("GET", url, headers=headers)
-        print(response)
+        print(json.loads(response.text))
         data_list = json.loads(response.text).get("data")
         for data in data_list:
             if data.get("tokenId") == contract_address:
