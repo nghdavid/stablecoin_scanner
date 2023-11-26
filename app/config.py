@@ -14,6 +14,7 @@ class DBSettings(BaseSettings):
     SQLALCHEMY_DATABASE_URL: Optional[str] = None
     API_KEY: str
     TRON_API_KEY: str
+    TELEGRAM_KEY: str
     ENV: str = "local"
     @validator("SQLALCHEMY_DATABASE_URL", pre=True)
     def assemble_db_uri(cls, v: Optional[str], values: Dict[str, Any]) -> Any:
