@@ -1,1 +1,1 @@
-python3 scan.py
+python3 /home/ec2-user/stablecoin_scanner/scan.py
