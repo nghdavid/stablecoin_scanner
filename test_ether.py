@@ -34,7 +34,7 @@ for address in list(TronWallet.wallet.keys()):
         for data in data_list:
             if data.get("tokenId") == contract_address:
                 amount = int(int(data.get("balance"))*TronWallet.ratio)
-                break
+                # break
         # print(TronWallet.contract_address.get(contract_address)+" "+str(amount))
         total_balance += amount
 
