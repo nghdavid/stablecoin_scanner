@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+import time
 from wallet import EthWallet, TronWallet
 from dotenv import load_dotenv
 from app.db.session import get_db
@@ -34,7 +35,8 @@ for address in list(TronWallet.wallet.keys()):
         for data in data_list:
             if data.get("tokenId") == contract_address:
                 amount = int(int(data.get("balance"))*TronWallet.ratio)
-                # break
+                break
+        time.sleep(0.2)
         # print(TronWallet.contract_address.get(contract_address)+" "+str(amount))
         total_balance += amount
 
