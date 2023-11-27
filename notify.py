@@ -5,6 +5,9 @@ from utils import send_telegram_notification, format_number_with_commas
 from wallet import EthWallet
 from app.db.redis import cache
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
 telegram_api_key = os.environ.get('TELEGRAM_KEY')
 chat_id = EthWallet.chat_id
 interval = 10
