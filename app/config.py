@@ -23,7 +23,8 @@ class DBSettings(BaseSettings):
         return f"mysql+mysqlconnector://{values.get('DB_USER')}:{values.get('DB_PASSWORD')}@{values.get('DB_HOST')}:{values.get('DB_PORT')}/{values.get('DB_NAME')}"
 
     class Config:
-        env_file = ".env"
+        # env_file = ".env"
+        env_file = "/home/ec2-user/stablecoin_scanner/.env"
 
 
 
