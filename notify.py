@@ -6,7 +6,9 @@ from wallet import EthWallet
 from app.db.redis import cache
 import os
 from dotenv import load_dotenv
-load_dotenv()
+env_path = os.path.join(os.path.dirname(__file__), '.env')
+# load_dotenv()
+load_dotenv(dotenv_path=env_path)
 
 telegram_api_key = os.environ.get('TELEGRAM_KEY')
 chat_id = EthWallet.chat_id
