@@ -144,3 +144,6 @@ cython_debug/
 
 # local dummy user data
 /dummy_user_data.json
+
+output.csv
+stablecoin_balance_1hr_intervals.png
