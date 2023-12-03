@@ -28,4 +28,6 @@ if latest_balance > balance_12h_ago + threshold or latest_balance > balance_24h_
     if is_expire is None:
         message = f"Balance of stablecoin has increased {format_number_with_commas(latest_balance-balance_24h_ago)} in the last 24 hours. \nBalance of stablecoin has increased {format_number_with_commas(latest_balance-balance_12h_ago)} in the last 12 hours. \nBalance of stablecoin has increased {format_number_with_commas(latest_balance-balance_6h_ago)} in the last 6 hours."
         send_telegram_notification(message, chat_id, telegram_api_key)
+        message = f"The current balance of stablecoin is {format_number_with_commas(latest_balance)}."
+        send_telegram_notification(message, chat_id, telegram_api_key)
     cache.setex('is_expire', 3600, '1')
