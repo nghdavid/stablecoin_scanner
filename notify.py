@@ -20,7 +20,7 @@ latest_balance = balances[0].balance
 balance_6h_ago = balances[int(6*60/10)].balance
 balance_12h_ago = balances[int(12*60/10)].balance
 balance_24h_ago = balances[int(24*60/10)].balance
-
+cache.setex('is_executed', 590, '1')
 if latest_balance > balance_12h_ago + threshold or latest_balance > balance_24h_ago + threshold or latest_balance > balance_6h_ago + threshold:
     is_expire = cache.get('is_expire')
     if is_expire is None:
