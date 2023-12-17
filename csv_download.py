@@ -1,9 +1,17 @@
 import mysql.connector
 import csv
 
+# connection = mysql.connector.connect(
+#     host='localhost',
+#     port=3307,
+#     user='admin',
+#     password='MyNewPass1!',
+#     database='stablecoin'
+# )
+
 connection = mysql.connector.connect(
-    host='localhost',
-    port=3307,
+    host='database-1.c5rtl7byfjr0.us-east-1.rds.amazonaws.com',
+    port=3306,
     user='admin',
     password='MyNewPass1!',
     database='stablecoin'
